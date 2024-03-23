@@ -1,5 +1,5 @@
 import express from 'express'
-import restaurantRouter from "./routes/routes_3.json"
+import restaurantRouter from "./src/routes/routes_3.js"
 const app = express();
 
 app.use(express.json());
