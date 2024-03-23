@@ -1,5 +1,5 @@
 import express from 'express'
-import restaurantRouter from "./routes/routes_3.json"
+import router from './src/routes/routes_3.js';
 const app = express();
 
 app.use(express.json());
@@ -8,7 +8,8 @@ app.use(express.json());
 // app.use('/users',userRoutes);
 // app.use('route')
 
-app.use("/restaurant/meals",restaurantRouter)
+// app.use("/restaurant/meals",restaurantRouter)
+app.use('/restaurant/meals', router)
 app.get("/",(req,res)=>{
   const data = {
     key: "Yo! Hello World"
@@ -16,3 +17,6 @@ app.get("/",(req,res)=>{
   res.status(200).json(data);
 })
 export default app
+
+
+

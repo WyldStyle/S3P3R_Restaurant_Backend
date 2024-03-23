@@ -1,5 +1,5 @@
 import { ObjectId } from "mongodb";
-import database from "../../database_connection";
+import database from "../../database_connection.js";
 
 const collection_nameFn = (req)=>{
 if(req.body.hotel !== undefined) return 'hotels'

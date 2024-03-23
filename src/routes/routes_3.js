@@ -1,6 +1,7 @@
 import express from 'express'
-import * as RestaurantController from '../models/controller_2'
+import * as RestaurantController from '../models/controller_2.js'
 
+console.log('in route_3',RestaurantController);
 const router = express.Router();
 
 router.post('/newEntry',RestaurantController.newEntry);
