@@ -6,7 +6,7 @@ export default class ResponseHandler {
     })
   }
   
-  sendFailureResponse (res, message, data, statusCode) {
+  static sendFailureResponse (res, message, data, statusCode) {
     res.status(statusCode).json({
       data,
       message,
